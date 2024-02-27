@@ -1,0 +1,17 @@
+.card{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+}
+.cards{
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+}
+.my{
+    font-family: sans-serif;
+}
+.main{
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+}

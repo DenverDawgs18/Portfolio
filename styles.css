@@ -5,9 +5,11 @@
     margin: 0;
 }
 .card{
-    height: 200px;
+    height: 250px;
     width: 200px;
-    background-color: orange;
+    background-color: 	#F5F5F5;
+    box-shadow: 2px 2px 5px gray;
+
 }
 .cards{
     gap: 20px;
@@ -96,4 +98,25 @@ header{
 }
 .lore{
     padding: 10px;
+}
+.my{
+    justify-self: start;
+    padding-left: 15px;
+}
+.battle{
+    width: 200px;
+    
+}
+.bottom{
+    position: relative;
+}
+.githubicon.car{
+    height: 75;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.name,.short{
+    padding: 5px;
+    color: black;
 }

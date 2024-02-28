@@ -6,7 +6,8 @@
 .cards{
     gap: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: center;
 }
 .my{
     font-family: sans-serif;
@@ -19,9 +20,28 @@ footer{
     background-color: #B2FFFF;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 10vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 .glasses{
     height: 20vh;
     object-fit: contain;
+}
+.cla{
+    height: 15vh;
+    object-fit: contain;
+}
+header{
+    display: grid;
+    justify-items: center;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
 }

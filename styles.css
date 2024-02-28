@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
 .card{
     height: 200px;
     width: 200px;
@@ -6,11 +12,14 @@
 .cards{
     gap: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-items: center;
 }
 .my{
-    font-family: sans-serif;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main{
     display: grid;
@@ -34,14 +43,42 @@ footer{
     object-fit: contain;
 }
 header{
+    height: 30vh;
     display: grid;
     justify-items: center;
+    background: linear-gradient(
+        170deg,
+        lightblue 60%,
+        white 60%
+    );
+    
+}
+.hright{
+    background-color: white;
+    border-left: none;
+    box-shadow: 2px 2px 5px gray;
+    padding: 5px;
+    margin-right: 1vh;
+}
+.hleft{
+    position: relative;
     
 }
 .container{
     display: grid;
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: .4fr 1fr;
     justify-items: center;
     align-items: center;
-    gap: 5px;
+    position: relative;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+.pail{
+    
+    font-size: 34px;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
 }

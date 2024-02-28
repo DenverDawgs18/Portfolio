@@ -59,12 +59,15 @@ header{
     box-shadow: 2px 2px 5px gray;
     padding: 5px;
     margin-right: 1vh;
+    position: relative;
+    
 }
 .hleft{
     position: relative;
     
 }
 .container{
+    
     display: grid;
     grid-template-columns: .4fr 1fr;
     justify-items: center;
@@ -81,4 +84,16 @@ header{
     bottom: 5px;
     left: 50%;
     transform: translate(-50%);
+}
+.githubicon.hea{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.about{
+    padding: 10px;
+    font-size: 28px;
+}
+.lore{
+    padding: 10px;
 }

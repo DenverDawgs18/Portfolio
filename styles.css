@@ -6,8 +6,7 @@
     overflow: hidden;
 }
 .card{
-    height: 250px;
-    width: 200px;
+    max-width: 25vw;
     background-color: 	#F5F5F5;
     box-shadow: 2px 2px 5px gray;
 
@@ -22,12 +21,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2vh;
 }
 .main{
-    height: 45vh;
     display: grid;
     grid-template-rows: 0.1fr 1fr;
-    margin-bottom: 5vh;
+    padding: 20px;
+    margin-bottom: 3vh;
     align-items: center;
 }
 footer{
@@ -37,7 +37,7 @@ footer{
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
 }
 .glasses{
     padding: 20px;
@@ -50,7 +50,7 @@ footer{
 }
 
 header{
-    height: 30vh;
+    
     display: grid;
     justify-items: center;
     background: linear-gradient(
@@ -78,7 +78,7 @@ header{
     justify-self: end;
 }
 .container{
-    
+    padding-top: 20px;
     display: grid;
     grid-template-columns: .4fr 1fr;
     justify-items: center;
@@ -113,8 +113,8 @@ header{
     padding: 15px;
 }
 .projimage{
-    width: 200px;
-    height: 125px;
+    width: 15vh;
+    height: 10vh;
     
 }
 .bottom{
@@ -132,12 +132,21 @@ header{
     color: black;
 }
 footer{
+    display: flex;
+    justify-content: space-around;
+}
+.wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
 }
 .left{
     display: grid;
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+.email,.phone{
+    display: grid;
+    grid-template-columns: .1fr 1fr;
 }

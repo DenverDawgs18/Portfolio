@@ -6,10 +6,14 @@
     overflow: hidden;
 }
 .card{
-    max-width: 25vw;
+    max-width: 50vw;
     background-color: 	#F5F5F5;
     box-shadow: 2px 2px 5px gray;
-
+}
+body{
+    display: grid;
+    grid-template-rows: .5fr 1fr .4fr;
+    height: 100vh;
 }
 .cards{
     gap: 20px;
@@ -23,12 +27,13 @@
     align-items: center;
     margin-bottom: 2vh;
 }
+
 .main{
     display: grid;
-    grid-template-rows: 0.1fr 1fr;
+    grid-template-rows: 0.05fr 1fr;
     padding: 20px;
-    margin-bottom: 3vh;
     align-items: center;
+    grid-row: 2/3
 }
 footer{
     background-color: #B2FFFF;
@@ -38,15 +43,28 @@ footer{
     left: 0;
     bottom: 0;
     width: 100vw;
+    grid-row: 3/4;
+    max-height: 20vh;
+}
+.right{
+    display: flex;
+    justify-content: center;
 }
 .glasses{
     padding: 20px;
-    height: 20vh;
+    height: 20vw;
     object-fit: contain;
 }
 .cla{
-    width: 15vh;
+    width: 20vw;
     object-fit: contain;
+}
+.left{
+    gap: 20px;
+    align-items: center;
+}
+.contact,.pleae,.add,.ema,.ph{
+    font-size: 14px;
 }
 
 header{
@@ -113,13 +131,16 @@ header{
     padding: 15px;
 }
 .projimage{
-    width: 15vh;
-    height: 10vh;
+    width: 100%;
+    object-fit: contain;
     
+}
+.top{
+    height: 50%;
 }
 .bottom{
     position: relative;
-    height: 125px;
+    height: 50%;
 }
 .githubicon.car{
     height: 75;
@@ -133,7 +154,8 @@ header{
 }
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: space-between;
 }
 .wrapper{
     display: grid;
@@ -149,4 +171,164 @@ footer{
 .email,.phone{
     display: grid;
     grid-template-columns: .1fr 1fr;
+}
+
+
+@media (max-width: 800px) {
+    .card{
+        max-height: 30vw;
+        max-width: 30vw;
+    }
+    .githubicon{
+        width: 20; 
+        height: 20;
+    }
+    .cards{
+        padding-top: 10px;
+        gap: 10px;
+        align-self: start;
+    }
+    .top{
+        height: 50%;
+    }
+    .container{
+        position: relative;
+    }
+    .my{
+        margin-bottom: 0;
+        padding: 2px;
+    }
+    .main{
+        padding: 20px;
+    }
+}
+@media(max-width: 900px) and (min-width: 600px){
+    .pail{
+        top: 5px;
+        right: 5px;
+    
+    }
+}
+
+@media (max-width: 600px){
+    .mail,.ph{
+        max-width: 15px;
+        max-height: 15px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        font-size: 12px;
+    }
+    body{
+        grid-template-rows: .7fr 1fr .7fr;
+        height: 100%;
+    }
+    html{
+        height: 100%;
+    }
+    .lore{
+        font-size: 8px;
+    }
+    .my{
+        font-size: 18px;
+    }
+    .main{
+        padding: 5px;
+        height: 110%;
+        overflow-y: auto;
+    }
+    .name{
+        font-size: 14px;
+    }
+    .short{
+        font-size: 7.5px;
+    }
+    .githubicon{
+        max-width: 20px;
+        max-height: 20px;
+    }
+    .hright{
+        box-shadow: none;
+        background-color: transparent;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .about{
+        padding: 0;
+    }
+    .container{
+        margin: 0;
+        padding-top: 5px;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact,.please,.add,.ema,.pho{
+        font-size: 8px;
+    }
+    .left{
+        padding: 0;  
+        width: 100vw;
+        gap: 10px;
+        padding-top: 10px;
+
+    }
+    .ph,.mail{
+        max-width: 20px;
+    }
+    .cards{
+        max-height: 150vh;
+    }
+    .my{
+        margin-bottom: 3vh;
+    }
+
+    .name{
+        font-size: 12px;
+    }
+    .pail{
+        font-size: 10px;
+    }
+    .githubicon.car,.githubicon.foot{
+        max-width: 15px;
+        max-height: 15px;
+    }
+    .short{
+        padding: 0;
+    }
+    .glasses{
+        margin-top: 10vh;
+    }
+    .wrapper{
+        height: 50vh;
+        overflow-y: auto;
+    }
+    footer{
+        overflow-y: auto;
+    }
+}
+@media (min-width: 1200px){
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card{
+        max-width: 15vw;
+        padding-bottom: 15px;
+        max-height: 20vw;
+    }
+    .glasses{
+        max-height: 18vh;
+        object-fit: contain;
+    }
+    .cla{
+        width: 15vh;
+    }
 }
